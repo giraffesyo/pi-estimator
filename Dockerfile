@@ -9,3 +9,5 @@ COPY pi.py /code/pi.py
 RUN chmod +x /code/pi.py
 
 ENV PATH "/code:$PATH"
+
+CMD ["pi.py", "-h"]
